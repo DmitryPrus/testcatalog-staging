@@ -1,2 +1,2 @@
-# testcatalog-staging
-for staging env
+# testcatalog.github.io
+UI for test catalogs
