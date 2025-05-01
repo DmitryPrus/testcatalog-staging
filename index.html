@@ -260,6 +260,8 @@
         // local
         // http://localhost:8012/runtest
         xhr.open("POST", "https://kat5t5o289.execute-api.eu-north-1.amazonaws.com/staging/lpc-staging", true);
+        xhr.timeout = 90000
+        xhr.ontimeout = function() {console.error("Request timed out after 90 seconds");};
         xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
         xhr.onload = function() {
